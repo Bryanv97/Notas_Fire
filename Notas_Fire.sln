@@ -1,0 +1,35 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29306.81
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Notas_Fire.Android", "Notas_Fire\Notas_Fire.Android\Notas_Fire.Android.csproj", "{FEA0D40E-8463-4EB2-AEC3-CC4074798034}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Notas_Fire", "Notas_Fire\Notas_Fire\Notas_Fire.csproj", "{0A4CB9EF-6346-4B5F-B93E-9F42106B23C4}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{FEA0D40E-8463-4EB2-AEC3-CC4074798034}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FEA0D40E-8463-4EB2-AEC3-CC4074798034}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FEA0D40E-8463-4EB2-AEC3-CC4074798034}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{FEA0D40E-8463-4EB2-AEC3-CC4074798034}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FEA0D40E-8463-4EB2-AEC3-CC4074798034}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FEA0D40E-8463-4EB2-AEC3-CC4074798034}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{0A4CB9EF-6346-4B5F-B93E-9F42106B23C4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0A4CB9EF-6346-4B5F-B93E-9F42106B23C4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0A4CB9EF-6346-4B5F-B93E-9F42106B23C4}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{0A4CB9EF-6346-4B5F-B93E-9F42106B23C4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0A4CB9EF-6346-4B5F-B93E-9F42106B23C4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0A4CB9EF-6346-4B5F-B93E-9F42106B23C4}.Release|Any CPU.Deploy.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {6C567C18-EDFB-481A-B6F0-0E915A13842B}
+	EndGlobalSection
+EndGlobal
