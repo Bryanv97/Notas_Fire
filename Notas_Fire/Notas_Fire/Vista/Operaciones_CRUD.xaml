@@ -6,10 +6,45 @@
              mc:Ignorable="d"
              x:Class="Notas_Fire.Vista.Operaciones_CRUD">
     <ContentPage.Content>
+        
         <StackLayout>
-            <Label Text="Welcome to Xamarin.Forms!"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
+            <Label Text="ID: " FontSize="16" FontAttributes="Bold" HorizontalOptions="CenterAndExpand"></Label>
+            <Entry Text="{Binding NoteID}" Placeholder="ID" x:Name="txtID" Keyboard="Numeric"></Entry>
+            <Label Text="Titulo: "  FontSize="16" FontAttributes="Bold" HorizontalOptions="CenterAndExpand"></Label>
+            <Entry Text="{Binding Title}" Placeholder="Titulo" x:Name="txttitle"></Entry>
+            <Label Text="Contenido: " FontSize="16" FontAttributes="Bold" HorizontalOptions="CenterAndExpand"></Label>
+            <Editor Text="{Binding Contend}" Placeholder="Contenido" x:Name="txtcontend"></Editor>
+  
+            <Picker Title="Tipo De Nota"
+                     TitleColor="Red" HorizontalOptions="CenterAndExpand">
+                <Picker.Items>
+                        <x:String>Informativa</x:String>
+                        <x:String>Tareas</x:String>
+                        <x:String>Salidas</x:String>
+                        <x:String>Eventos</x:String>
+                        <x:String>Tienda</x:String>
+                </Picker.Items>
+             </Picker>
+            <Label Text="Importancia"  HorizontalOptions="CenterAndExpand" FontSize="16" FontAttributes="Bold"  ></Label>
+            <Frame BorderColor="Black" Padding="5" BackgroundColor="AliceBlue" HasShadow="True">   
+            <Slider ThumbColor="Black" MaximumTrackColor="Black" MinimumTrackColor="Accent" ValueChanged="Slider_ValueChanged"  x:Name="slider" Minimum="0" Maximum="100" DragCompleted="Slider_DragCompleted"></Slider>
+            </Frame>
+            <Frame HorizontalOptions="CenterAndExpand" BackgroundColor="AliceBlue" HasShadow="True" BorderColor="Black">
+            <Label Text="" x:Name="lblvalue" HorizontalOptions="CenterAndExpand" FontSize="16" FontAttributes="Bold"  ></Label>
+            </Frame>
+
+            <Button Text="Agregar Nueva Tarea"
+                    Clicked="Button_Clicked"></Button>
+            <Button Text="Eliminar"
+                    x:Name="ButtonEliminar"
+                    Clicked="ButtonEliminar_Clicked"></Button>
+            <Button Text="Actualizar"
+                    x:Name="ButtonActualizar"
+                    Clicked="ButtonActualizar_Clicked"></Button>
+            <Button Text="Cancelar"
+                    x:Name="ButtonCancelar"
+                    Clicked="ButtonCancelar_Clicked"></Button>
+
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

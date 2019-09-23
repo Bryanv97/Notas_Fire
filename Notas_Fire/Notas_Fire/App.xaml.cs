@@ -1,7 +1,7 @@
 ﻿using System;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
-
+using Notas_Fire.Vista;
 namespace Notas_Fire
 {
     public partial class App : Application
@@ -10,7 +10,7 @@ namespace Notas_Fire
         {
             InitializeComponent();
 
-            MainPage = new MainPage();
+            MainPage = new NavigationPage(new Lista_Contenido());
         }
 
         protected override void OnStart()
